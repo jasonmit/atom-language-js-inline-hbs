@@ -2,7 +2,7 @@
 
 Atom Language support for inline hbs within javascript files
 
-![Screenshot](https://i.imgur.com/LMfm0cP.png)
+![Screenshot](https://i.imgur.com/cgtmfeF.png)
 
 ## Installation
 
