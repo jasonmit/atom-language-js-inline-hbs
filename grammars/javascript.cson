@@ -8,17 +8,14 @@
 'name': 'JavaScript + HTMLBars'
 'patterns': [
   {
-    'begin': 'hbs\`'
-    'captures':
-      '0':
-        'name': 'punctuation.definition.comment.js'
+    'name': 'comment.block.js'
+    'begin': '\\b(hbs\`)'
+    'end': '\`'
     'patterns': [
       {
         'include': 'text.html.mustache'
       }
     ]
-    'end': '\`'
-    'name': 'comment.block.js'
   }
   {
     'include': 'source.js'
