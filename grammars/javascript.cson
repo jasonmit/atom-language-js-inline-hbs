@@ -4,7 +4,7 @@
   'es'
   'es6'
 ]
-'firstLineMatch': '^#!.*\\b(node|iojs|JavaScript)'
+'firstLineMatch': '^import.*\\b(ember|Ember|hbs|htmlbars\-inline\-precompile)'
 'name': 'JavaScript inline hbs'
 'patterns': [
   {
