@@ -1,22 +1,32 @@
 'scopeName': 'source.js.inline.hbs'
+'firstLineMatch': '^import.*\\b(ember|Ember|hbs|htmlbars\-inline\-precompile)'
+'name': 'JavaScript inline hbs'
 'fileTypes': [
   'js'
   'es'
   'es6'
 ]
-'firstLineMatch': '^import.*\\b(ember|Ember|hbs|htmlbars\-inline\-precompile)'
-'name': 'JavaScript inline hbs'
-'patterns': [
-  {
-    'name': 'comment.block.js'
-    'begin': '\\b(hbs\`)'
-    'end': '\`'
+'injections':
+  'L:source.js.inline.hbs':
     'patterns': [
       {
-        'include': 'text.html.htmlbars'
+        'name': 'comment.block.js'
+        'begin': '\\b(hbs\`)'
+        'beginCaptures':
+          '0':
+            'name': 'punctuation.definition.inline.hbs.begin'
+        'end': '\`'
+        'endCaptures':
+          '0':
+            'name': 'punctuation.definition.inline.hbs.end'
+        'patterns': [
+          {
+            'include': 'text.html.htmlbars'
+          }
+        ]
       }
     ]
-  }
+'patterns': [
   {
     'include': 'source.js'
   }
