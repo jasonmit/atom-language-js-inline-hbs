@@ -1,7 +1,7 @@
 {
   "name": "language-js-mustache",
   "version": "0.0.0",
-  "description": "JavaScript + mustache language support in Atom",
+  "description": "JavaScript + htmlbar block support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"

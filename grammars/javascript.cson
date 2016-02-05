@@ -1,27 +1,14 @@
 'scopeName': 'source.jshbs'
 'fileTypes': [
   'js'
-  '_js'
   'es'
   'es6'
-  'gs'
-  'htc'
-  'jscad'
-  'jsm'
-  'json5'
-  'pac'
-  'pjs'
-  'xsjs'
-  'xsjslib'
 ]
 'firstLineMatch': '^#!.*\\b(node|iojs|JavaScript)'
-'name': 'JavaScript Handlebars'
+'name': 'JavaScript + HTMLBars'
 'patterns': [
   {
-    'include': 'text.html.mustache'
-  }
-  {
-    'begin': 'hbs\`\`\`'
+    'begin': 'hbs\`'
     'captures':
       '0':
         'name': 'punctuation.definition.comment.js'
@@ -30,7 +17,8 @@
         'include': 'text.html.mustache'
       }
     ]
-    'end': '\`\`\`'
+    'end': '\`'
+    'name': 'comment.block.js'
   }
   {
     'include': 'source.js'
