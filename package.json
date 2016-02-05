@@ -1,7 +1,7 @@
 {
-  "name": "language-js-mustache",
-  "version": "0.0.0",
-  "description": "JavaScript + htmlbar block support in Atom",
+  "name": "language-js-inline-hbs",
+  "version": "0.0.1",
+  "description": "JavaScript + inline hbs block support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
