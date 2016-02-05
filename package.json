@@ -1,10 +1,14 @@
 {
   "name": "language-js-inline-hbs",
   "version": "0.0.1",
-  "description": "JavaScript + inline hbs block support in Atom",
+  "description": "JavaScript + inline hbs support in Atom",
   "engines": {
     "atom": "*",
     "node": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jasonmit/atom-language-js-inline-hbs.git"
   },
   "license": "MIT"
 }
