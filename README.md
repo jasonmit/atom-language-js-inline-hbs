@@ -13,4 +13,6 @@ Atom Language support for inline hbs within javascript files
 
 ## Known Limitation
 
-You must import `htmlbars-inline-precompile` as `hbs`.  `hbs` is not dynamic but I'd be willing to accept a PR that makes it so.
+You must import `htmlbars-inline-precompile` as `hbs`, i.e, `import hbs from 'htmlbars-inline-precompile';`
+
+The `hbs` part of the import statement is not yet dynamic -- but I'd be willing to accept a PR to make it so.
